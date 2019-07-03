@@ -17,3 +17,7 @@
 # Locate exact filename only
     locate -b '\AsmsBookOrderController.class'
 [locate command for searching exact filename only](https://askubuntu.com/questions/831869/locate-command-for-searching-exact-filename-only)
+
+# List folders size in current directory
+    du -h --max-depth=1 | sort -n
+[du-max-depth](https://www.peterbe.com/plog/du-max-depth)
