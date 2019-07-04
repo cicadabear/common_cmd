@@ -18,6 +18,11 @@
     locate -b '\AsmsBookOrderController.class'
 [locate command for searching exact filename only](https://askubuntu.com/questions/831869/locate-command-for-searching-exact-filename-only)
 
+# List all of files' size in current directory
+    du -ah --max-depth=1 | sort -h
+    du -sh -- * | sort -h
+[how-do-you-sort-du-output-by-size](https://unix.stackexchange.com/questions/4681/how-do-you-sort-du-output-by-size)
+
 # List folders size in current directory
-    du -h --max-depth=1 | sort -n
+    du -h --max-depth=1 | sort -h
 [du-max-depth](https://www.peterbe.com/plog/du-max-depth)
