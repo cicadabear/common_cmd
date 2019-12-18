@@ -26,3 +26,7 @@
 # List folders size in current directory
     du -h --max-depth=1 | sort -h
 [du-max-depth](https://www.peterbe.com/plog/du-max-depth)
+
+# Find files that contains multiple specified strings   
+    find . -type f  -exec grep -lZ FIND {} + | xargs -r0 grep -l ME
+[how-to-search-files-where-two-different-words-exist](https://unix.stackexchange.com/questions/67794/how-to-search-files-where-two-different-words-exist)
