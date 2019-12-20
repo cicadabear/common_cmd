@@ -30,3 +30,9 @@
 # Find files that contains multiple specified strings   
     find . -type f  -exec grep -lZ FIND {} + | xargs -r0 grep -l ME
 [how-to-search-files-where-two-different-words-exist](https://unix.stackexchange.com/questions/67794/how-to-search-files-where-two-different-words-exist)
+
+    find . -type f -exec fgrep -q 'myString1' {} \; \
+               -exec fgrep -q 'myString2' {} \; \
+               -exec fgrep -q 'myString3' {} \; \
+               -print
+[recursively-locate-all-files-that-have-string-a-and-string-b-using-grep](https://stackoverflow.com/questions/22560705/recursively-locate-all-files-that-have-string-a-and-string-b-using-grep)
