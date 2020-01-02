@@ -35,4 +35,7 @@
                -exec fgrep -q 'myString2' {} \; \
                -exec fgrep -q 'myString3' {} \; \
                -print
-[recursively-locate-all-files-that-have-string-a-and-string-b-using-grep](https://stackoverflow.com/questions/22560705/recursively-locate-all-files-that-have-string-a-and-string-b-using-grep)
+[recursively-locate-all-files-that-have-string-a-and-string-b-using-grep](https://stackoverflow.com/questions/22560705/recursively-locate-all-files-that-have-string-a-and-string-b-using-grep)  
+
+# sqlplus logon remove oracle db as sysdba
+sqlplus sys/oracle@10.13.131.105:49161/xe as sysdba
