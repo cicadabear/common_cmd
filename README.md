@@ -41,6 +41,6 @@
     sqlplus sys/oracle@10.13.131.105:49161/xe as sysdba
 
 # use a specific DNS server for querying a domain
-    nslookup example.com 208.67.222.222 # nslookup example.com 
-    dig @208.67.222.222 example.com #dig example.com 
+    nslookup example.com 208.67.222.222 # nslookup example.com using the default DNS server
+    dig @208.67.222.222 example.com #dig example.com using the default DNS server
 [troubleshooting-dns-with-dig-and-nslookup](https://www.a2hosting.com/kb/getting-started-guide/internet-and-networking/troubleshooting-dns-with-dig-and-nslookup)
