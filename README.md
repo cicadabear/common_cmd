@@ -1,4 +1,4 @@
-# common_cmd
+# common cmd
 
 # list changed files in last commit
     git diff --name-only HEAD~1 HEAD
@@ -44,3 +44,8 @@
     nslookup example.com 208.67.222.222 # nslookup example.com using the default DNS server
     dig @208.67.222.222 example.com #dig example.com using the default DNS server
 [troubleshooting-dns-with-dig-and-nslookup](https://www.a2hosting.com/kb/getting-started-guide/internet-and-networking/troubleshooting-dns-with-dig-and-nslookup)
+
+# get ip address
+```shell
+export IP_ADDR="$(ifconfig eth0 | awk '/inet / {print $2}')"
+```
