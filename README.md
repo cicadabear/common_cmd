@@ -49,3 +49,7 @@
 ```shell
 export IP_ADDR="$(ifconfig eth0 | awk '/inet / {print $2}')"
 ```
+
+# Find All Clients Connected to HTTP or HTTPS Ports
+    netstat -tn src :80 or src :443
+ [find-all-clients-connected-to-http-or-https-ports](https://www.tecmint.com/find-all-clients-connected-to-http-or-https-ports/)
